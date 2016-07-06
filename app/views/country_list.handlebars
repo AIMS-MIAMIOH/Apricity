@@ -1,0 +1,162 @@
+<!--
+<nav class="navbar navbar-inverse navbar-fixed-top" style="margin-top: 50px; height: 60px">
+
+    <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal" style="width: 100%">
+        <span style="color: white"><i class="fa fa-list fa-lg"></i> Refine Search</span>
+    </button>
+    
+ </nav> -->
+
+<nav class="nav navbar-fixed-top" style="margin-top: 50px">
+    <ol id="square" class="breadcrumb" style="margin-bottom: 0px">
+        <li><a href="/welcome"><i class="fa fa-arrow-left"> Home</i></a></li>
+      <li class="active">Countries</li>
+    </ol>
+    
+    <button id="square" type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal" style="width: 100%">
+        <span style="color: white"><i class="fa fa-list fa-lg"></i> Refine Search</span>
+    </button>
+</nav>
+
+
+<!--    
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingThree">
+          <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSearch" aria-expanded="false" aria-controls="collapseThree" style="text-decoration: none">
+              <i class="fa fa-list fa-lg"></i> Refine Search
+            </a>
+          </h4>
+        </div>
+        <div id="collapseSearch" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+
+            <ul>
+                <li>Search stuff</li>
+                <button>Search</button>
+            </ul>
+
+        </div>
+      </div>
+    </div>
+-->
+
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+            <h4 class="modal-title">Refine Search</h4>
+          </div>
+          <div class="modal-body">
+              <!--INSIDE MODAL -->
+            <div class="col-md-12">
+                <div style="text-align: center; display: block; float: inside">
+                    <div class="form-group ">
+                        <label style="text-decoration : underline; font-size: 20px" class="col-md-12">Occupation</label>
+                        <div class="container">
+                            <select  class=" form-control col-md-4" style=" margin-bottom: 3%">
+                                <option>-- Select an Industry</option>
+                                <option>Medicine</option>
+                                <option>Engineering</option>
+                                <option>Business</option>
+                            </select>
+                            <select class="form-control col-md-4" style=" margin-bottom: 3%">
+                                <option>-- Select a field --</option>
+                                <option>Pediatrician</option>
+                                <option>Surgeon</option>
+                                <option>Nurse</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label style="text-decoration: underline; font-size: 20px" class="col-md-12">Religious Affiliation</label>
+                        <div class="container">
+                             <select  class="col-md-3 form-control" style=" margin-bottom: 3%">
+                                <option>-- Select an Industry</option>
+                                <option>Medicine</option>
+                                <option>Engineer</option>
+                                <option>Business</option>
+                            </select>
+                            <select class="col-md- form-control"style=" margin-bottom: 3%">
+                                <option>-- Select a field --</option>
+                                <option>Pediatrician</option>
+                                <option>Surgeon</option>
+                                <option>Nurse</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label style="text-decoration: underline;font-size: 20px"class="col-md-12">Nationality</label>
+                        <div class="container">
+                            <select  class="col-md-3 form-control" style=" margin-bottom: 3%">
+                                <option>-- Select an Nationality --</option>
+                                <option>American</option>
+                                <option>Syrian</option>
+                                <option>Mexican</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label style="text-decoration: underline; font-size: 20px" class="col-md-12">Preferred Climate</label>
+                        <div class="container">
+                            <select  class="col-md-3 form-control" style=" margin-bottom: 3%">
+                                <option>-- Select an Climate --</option>
+                                <option>Temperate</option>
+                                <option>Humid</option>
+                                <option>Dry</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END INSIDE MODAL -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger btn-lg pull-left" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success btn-lg" data-dismiss="modal">Find Countries</button>
+          </div>
+        </div>
+
+      </div>
+    </div> 
+
+
+    <div class="list-group" style="margin-top: 130px">
+      <a href="/country" class="list-group-item">
+        <h3 class="list-group-item-heading"><i class="fa fa-flag fa-lg"></i> Sweden</h3>
+        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+      </a>
+      <a href="#" class="list-group-item">
+        <h3 class="list-group-item-heading"><i class="fa fa-flag fa-lg"></i> Germany</h3>
+        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+      </a>
+      <a href="#" class="list-group-item">
+        <h3 class="list-group-item-heading"><i class="fa fa-flag fa-lg"></i> The United States</h3>
+        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+      </a>
+      <a href="#" class="list-group-item">
+        <h3 class="list-group-item-heading"><i class="fa fa-flag fa-lg"></i> Mexico</h3>
+        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+      </a>
+      <a href="#" class="list-group-item">
+        <h3 class="list-group-item-heading"><i class="fa fa-flag fa-lg"></i> Austria</h3>
+        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+      </a>
+      <a href="#" class="list-group-item">
+        <h3 class="list-group-item-heading"><i class="fa fa-flag fa-lg"></i> Turkey</h3>
+        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+      </a>
+      <a href="#" class="list-group-item">
+        <h3 class="list-group-item-heading"><i class="fa fa-flag fa-lg"></i> Japan</h3>
+        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+      </a>
+      <a href="#" class="list-group-item">
+        <h3 class="list-group-item-heading"><i class="fa fa-flag fa-lg"></i> China</h3>
+        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+      </a>
+    </div>
